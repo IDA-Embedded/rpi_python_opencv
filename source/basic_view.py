@@ -1,8 +1,7 @@
 import cv2
 
-from .ImageAnalysis_Utility import ImageAnalysis_Utility
-from .Image_Loader import Image_Loader
-
+from source.ImageAnalysis_Utility import ImageAnalysis_Utility
+from source.Image_Loader import Image_Loader
 PATH_TO_IMG = "/home/pi/node_red/images/esp32Img.png"
 class Basic_View:   
 
