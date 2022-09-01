@@ -13,7 +13,7 @@ class Basic_View:
             try:
                 (res,img) = m_loader.getImage()
                 if(res):
-                    res = ImageAnalysis_Utility.scale(img,10)
+                    res = ImageAnalysis_Utility.scale(img,25)
                     ImageAnalysis_Utility.viewSimple(res,"raw")
             except:
                 print("expection happend .... ")
