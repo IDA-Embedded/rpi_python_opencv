@@ -13,7 +13,8 @@ class Basic_View:
             try:
                 (res,img) = m_loader.getImage()
                 if(res):
-                    ImageAnalysis_Utility.viewSimple(img,"raw")
+                    res = ImageAnalysis_Utility.scale(img,0.1)
+                    ImageAnalysis_Utility.viewSimple(res,"raw")
             except:
                 print("expection happend .... ")
                 cv2.waitKey(100)
