@@ -11,3 +11,5 @@ main:
 	$(PYTHON_VER) main.py
 
 
+upload:
+	./tools/to_rpi.sh

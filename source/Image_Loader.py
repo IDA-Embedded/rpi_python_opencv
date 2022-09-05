@@ -57,4 +57,5 @@ class Image_Loader:
         if self.__is_input_ready__():
             return (True, cv2.imread(self.filename, self.image_format))
         else:
+            cv2.waitKey(100)
             return (False, None)

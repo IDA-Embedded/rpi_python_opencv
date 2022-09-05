@@ -38,8 +38,9 @@ class Basic_View:
         BLUE_COLOR = (0,0,255)
         THICKNESS = 15
         if len(cnts) > 0:
-            c = max(cnts, key=cv2.contourArea)
-            cv2.drawContours(drawing, c, -1, BLUE_COLOR, THICKNESS)
+            for ele in cnts:
+            #c = max(cnts, key=cv2.contourArea)
+                cv2.drawContours(drawing, ele, -1, BLUE_COLOR, THICKNESS)
         return drawing
 
     def view_image():
